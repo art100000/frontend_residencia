@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Detector de Malware</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<nav class="topbar">
+  <div class="topbar-left">
+    <div class="topbar-logo">Δ</div>
+
+    <div class="topbar-search">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="URL, IP.." disabled />
+    </div>
+  </div>
+
+  <div class="topbar-right">
+    <button class="tb-btn">⭳</button>
+    <button class="tb-btn">💬</button>
+    <button class="tb-btn">❓</button>
+    <button class="tb-btn">☼</button>
+
+    <button class="tb-btn text-btn disabled">Sign in</button>
+    <button class="tb-btn signup">Sign up</button>
+  </div>
+</nav>
+
+  <header>
+    <div class="logo">Δ</div>
+    <h1>Detector de Malware</h1>
+    <p>Envie um arquivo suspeito e verifique se contém malware.</p>
+  </header>
+
+  <main class="card">
+    <div class="upload-area" id="dropArea">
+      <img src="https://cdn-icons-png.flaticon.com/512/2997/2997249.png" class="icon" alt="">
+      <p>Arraste aqui ou selecione um arquivo</p>
+      <input id="fileInput" type="file" />
+    </div>
+    
+    <div class="file-warning">
+    ⚠️ Apenas arquivos <strong>.exe</strong> ou <strong>.csv</strong> são suportados.
+    <br>
+    Outros formatos (PNG, PDF, JPG, ZIP, etc.) não podem ser analisados pela IA.
+</div>
+
+
+    <label class="terms">
+      <input id="acceptTerms" type="checkbox" />
+      Aceito os termos de uso
+    </label>
+
+    <button id="sendBtn" disabled>Enviar</button>
+
+    <div id="loading" class="loading hide">Analisando...</div>
+
+    <p id="result" class="result"></p>
+    <p id="error" class="error"></p>
+  </main>
+
+  <footer>
+    <p>Detector de Malware • 2025</p>
+  </footer>
+
+
+<div id="resultModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalMessage"></p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
