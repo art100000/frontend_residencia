@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:8000/predict-file"; // altere se preciso
-
+const API_URL = "http://localhost:8000/predict-file"; // altere 
 document.addEventListener("DOMContentLoaded", () => {
 
     const fileInput = document.getElementById("fileInput");
@@ -52,9 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // ------------------------------------------
             //        ARQUIVO PE (EXE)
-            // ------------------------------------------
             if (data.prediction !== undefined) {
 
                 if (data.prediction === 1) {
@@ -85,9 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // ------------------------------------------
+        
             //        CSV (VARIAS PREDIÇÕES)
-            // ------------------------------------------
+
             if (data.predictions) {
 
                 let table = `
@@ -136,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // UTIL: mostra modal com conteúdo estilizado
     function showModal(title, html) {
         modalTitle.textContent = title;
         modalBody.innerHTML = html;

@@ -25,13 +25,13 @@ body {
   text-align:center;
 }
 
-/* HEADER */
+
 header { padding:40px 20px 15px; }
 .logo { font-size:40px;color:var(--accent);font-weight:700; }
 h1 { margin:10px 0 4px; }
 .lead { margin:0;color:var(--muted); }
 
-/* CARD */
+
 .card {
   background:var(--card);
   width:92%;
@@ -42,7 +42,6 @@ h1 { margin:10px 0 4px; }
   box-shadow:0 0 25px rgba(0,0,0,0.45);
 }
 
-/* UPLOAD */
 .upload-area {
   border:2px dashed rgba(255,255,255,0.15);
   padding:25px;
@@ -60,7 +59,7 @@ h1 { margin:10px 0 4px; }
   opacity:0.8;
 }
 
-/* WARNING */
+
 .file-warning {
   background:var(--warning-bg);
   color:var(--warning-text);
@@ -70,7 +69,7 @@ h1 { margin:10px 0 4px; }
   margin-bottom:15px;
 }
 
-/* TERMS */
+
 .terms {
   display:flex;
   align-items:center;
@@ -79,7 +78,7 @@ h1 { margin:10px 0 4px; }
   font-size:14px;
 }
 
-/* BUTTON */
+
 button {
   width:100%;
   padding:12px;
@@ -96,7 +95,7 @@ button:disabled {
   cursor:not-allowed;
 }
 
-/* LOADING */
+
 .loading {
   display:none;
   margin-top:15px;
@@ -104,7 +103,7 @@ button:disabled {
   font-weight:bold;
 }
 
-/* MODAL */
+
 .modal {
   display:none;
   position:fixed;
@@ -153,7 +152,7 @@ button:disabled {
   color:#333;
 }
 
-/* pills */
+
 .status-pill {
   padding:10px 14px;
   border-radius:10px;
@@ -174,7 +173,6 @@ button:disabled {
   border:1px solid var(--malware-border);
 }
 
-/* Instructions */
 .instructions {
   background:#fafafa;
   padding:10px 14px;
@@ -184,7 +182,6 @@ button:disabled {
   line-height:1.5;
 }
 
-/* CSV TABLE */
 .result-table {
   width:100%;
   border-collapse:collapse;
@@ -198,19 +195,19 @@ button:disabled {
   text-align:left;
 }
 
-/* Anim */
+
 @keyframes fadeIn {
   from { transform:translateY(-10px); opacity:0; }
   to { transform:translateY(0); opacity:1; }
 }
 
-/* FOOTER */
+
 footer {
   margin-top:40px;
   color:#666;
   font-size:14px;
 }
-/* ---------- TOPBAR VIRUSTOTAL STYLE ---------- */
+
 
 .topbar {
   width: 100%;
@@ -229,7 +226,6 @@ footer {
   gap: 12px;
 }
 
-/* Logo */
 .topbar-logo {
   width: 30px;
   height: 30px;
@@ -240,7 +236,7 @@ footer {
   border-radius: 4px;
 }
 
-/* Search box */
+
 .topbar-search {
   background: #1d2740;
   border-radius: 6px;
